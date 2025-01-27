@@ -1,5 +1,5 @@
 import streamlit as st
-from postal_codes import PostalCodeManager
+from postalcodes import PostalCodeManager
 
 postal_code_manager = PostalCodeManager()
 
