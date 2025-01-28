@@ -14,7 +14,7 @@ def main():
             routes = postal_code_manager.get_routes_for_postal_code(postal_code)
             if routes:
                 st.success(f"Código Postal {postal_code} asociado a: ")
-                st.info(f" Jaula: {' , '.join(map(str, routes))}")
+                st.info(f" Jaula: {','.join(map(str, routes))}")
             else:
                 st.error(f"No se encontró información para el código postal {postal_code}")
         except ValueError:
